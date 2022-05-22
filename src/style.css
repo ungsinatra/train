@@ -1,152 +1,145 @@
-div{
-	border: 1px solid red;
+
+body {
+	font-family: "Cormorant Garamond";
 }
-body{
-	font-family:'Cormorant Garamond';
-  }
-  .header{
-   
-	max-width:1330px;
-	min-width:1280px;
-	margin:auto;
-	display:flex;
-	height:95px;
-  }
-  .header-link{
-	color:#10191E;
-	margin-right:20px;
-	text-decoration:none;
-	font-size:28px;
-	margin:auto;
-  }
-  .menu{
-	margin:40px auto;
-	max-width:1330px;
-	min-width:1280px;
-	flex-wrap:wrap;
-	display:flex;
+.header {
+	max-width: 1330px;
+	min-width: 1280px;
+	margin: auto;
+	display: flex;
+	height: 95px;
+}
+.header-link {
+	color: #10191e;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 28px;
+	margin: auto;
+}
+.menu {
+	margin: 40px auto;
+	max-width: 1330px;
+	min-width: 1280px;
+	flex-wrap: wrap;
+	display: flex;
 	justify-content: center;
 	min-height: 75px;
-	align-items:center;
-	
-	  }
-  .menu-link{
-	margin:20px;
-	color:#10191E;
-	text-decoration:none;
-	font-size:18px;
-  }
-  
-  .flex-row{
-	justify-content:space-between;
-	display:flex;
-	flex-wrap:wrap;
-  }
-  .project{
-	background-position:center;
-	background-size:cover;
-  }
-  .project_beginner{
-	width:636px;
-	height:430px;
-  }
-  .project_music-album{
-	background-image:url(https://code.s3.yandex.net/web-code/album.png); 
-  }
-  
-  .project_design-principles{
-	background-image:url(https://code.s3.yandex.net/web-code/design.png);
-	
-  }
-  .flex-column{
-  
+	align-items: center;
+}
+.menu-link {
+	margin: 20px;
+	color: #10191e;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.flex-row {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	justify-content: space-between;
-	display:flex;
-	width:636px;
-	height:557px;
-  }
-  .project_procrastinate{
-	width:636px;
-	height:557px;
-  }
-  .project-video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  }
-  
-  .project_p5{
-	width:636px;
-	height:240px;
-  }
-  
-  .flex-row_frameworks-inner {
-	width:636px;
-	height:290px;
-  }
-  
-  .project_slider{
-	background-image:url(https://code.s3.yandex.net/web-code/slider.gif);
-	width:306px;
-	height:290px;
-  }
-  .project_reactive{
-	background-image:url(https://code.s3.yandex.net/web-code/reactive.gif);
-	width:306px;
-	height:290px;
-  }
-  .flex-column_reversed{
-	flex-direction:column-reverse;
-  }
-  
-  .flex-row_reversed{
-	margin:60px auto;
-	flex-direction:row-reverse;
-  }
-  .project_vanilla{
-		  width: 306px;
-		  height: 290px;
-	  }
-  
-  
-	  .project_how-to-study{
-		  order: 3;
-		  background-image: url('https://code.s3.yandex.net/web-code/how-to-study.png');
-  
-	  }
-  
-	  .project_across-russia{
-		flex-basis:636px;
-		  order: 1;
-		  background-image: url('https://code.s3.yandex.net/web-code/across-russia.png');
-  
-	  }
-	  .project_mesto {
-		  order: 0;
-		  background-image: url('https://code.s3.yandex.net/web-code/mesto.png');
-  
-	  }
-  
-  .logo{
-		  width: 145px;
-		  height: 25px;
-		  background-image: url('https://pictures.s3.yandex.net/logo_black.png');
-  background-size: contain;
+	display: flex;
+	flex-wrap: wrap;
+}
+.project {
+	background-position: center;
+	background-size: cover;
+}
+.project_beginner {
+	width: 636px;
+	height: 430px;
+}
+.project_music-album {
+	background-image: url(https://code.s3.yandex.net/web-code/album.png);
+}
+
+.project_design-principles {
+	background-image: url(https://code.s3.yandex.net/web-code/design.png);
+}
+.flex-column {
+	justify-content: space-between;
+	display: flex;
+	width: 636px;
+	height: 557px;
+}
+.project_procrastinate {
+	width: 636px;
+	height: 557px;
+}
+.project-video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project_p5 {
+	width: 636px;
+	height: 240px;
+}
+
+.flex-row_frameworks-inner {
+	width: 636px;
+	height: 290px;
+}
+
+.project_slider {
+	background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
+	width: 306px;
+	height: 290px;
+}
+.project_reactive {
+	background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
+	width: 306px;
+	height: 290px;
+}
+.flex-column_reversed {
+	flex-direction: column-reverse;
+}
+
+.flex-row_reversed {
+	margin: 60px auto;
+	flex-direction: row-reverse;
+}
+.project_vanilla {
+	width: 306px;
+	height: 290px;
+}
+
+.project_how-to-study {
+	order: 3;
+	background-image: url("https://code.s3.yandex.net/web-code/how-to-study.png");
+}
+
+.project_across-russia {
+	flex-basis: 636px;
+	order: 1;
+	background-image: url("https://code.s3.yandex.net/web-code/across-russia.png");
+}
+.project_mesto {
+	order: 0;
+	background-image: url("https://code.s3.yandex.net/web-code/mesto.png");
+}
+
+.logo {
+	width: 145px;
+	height: 25px;
+	background-image: url("https://pictures.s3.yandex.net/logo_black.png");
+	background-size: contain;
 	background-repeat: no-repeat;
-		  background-position: center;
-	align-self:center;
-	  }
-  .footer {
-	  max-width: 1330px;
-	  min-width: 1280px;
-	  margin: auto;
-	  display: flex;
-	  height: 95px;
-	  justify-content: center;
-  }
-  
-  .main{
-	max-width:1330px;
-	min-width:1280px;
-	margin:auto;
-  }
+	background-position: center;
+	align-self: center;
+}
+.footer {
+	max-width: 1330px;
+	min-width: 1280px;
+	margin: auto;
+	display: flex;
+	height: 95px;
+	justify-content: center;
+}
+
+.main {
+	max-width: 1330px;
+	min-width: 1280px;
+	margin: auto;
+}
