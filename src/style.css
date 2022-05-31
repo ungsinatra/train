@@ -9,7 +9,7 @@ body {
 	display: flex;
 	height: 95px;
 }
-.header-link {
+.header__link {
 	color: #10191e;
 	margin-right: 20px;
 	text-decoration: none;
@@ -26,20 +26,29 @@ body {
 	min-height: 75px;
 	align-items: center;
 }
-.menu-link {
+.menu__link {
 	margin: 20px;
 	color: #10191e;
 	text-decoration: none;
 	font-size: 18px;
 }
 
+.menu__link_active{
+  text-decoration:underline;
+}
+
 .flex-row {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
+}
+.list{
+  	margin: 0;
+	padding: 0;
+	list-style: none;
+  
+  
 }
 .project {
 	background-position: center;
@@ -66,7 +75,7 @@ body {
 	width: 636px;
 	height: 557px;
 }
-.project-video {
+.project__video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -120,7 +129,7 @@ body {
 	background-image: url("https://code.s3.yandex.net/web-code/mesto.png");
 }
 
-.logo {
+.footer__logo {
 	width: 145px;
 	height: 25px;
 	background-image: url("https://pictures.s3.yandex.net/logo_black.png");
@@ -138,7 +147,7 @@ body {
 	justify-content: center;
 }
 
-.main {
+.content {
 	max-width: 1330px;
 	min-width: 1280px;
 	margin: auto;
