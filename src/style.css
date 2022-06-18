@@ -5,19 +5,29 @@ body {
 .header {
 	max-width: 1330px;
 	min-width: 1280px;
-	margin: auto;
 	display: flex;
 	height: 95px;
+}
+.header__link[lang="ru"]::before{
+  content:"Привет, меня зовут "
+}
+.header__link[lang="fr"]::before{
+  content:"Bonjour, je suis "
+}
+.header__link[lang="en"]::before{
+  content:"Hello, my name is "
 }
 .header__link {
 	color: #10191e;
 	margin-right: 20px;
 	text-decoration: none;
 	font-size: 28px;
-	margin: auto;
+
+}
+.header__link::after{
+  content :'!';
 }
 .menu {
-	margin: 40px auto;
 	max-width: 1330px;
 	min-width: 1280px;
 	flex-wrap: wrap;
@@ -26,16 +36,38 @@ body {
 	min-height: 75px;
 	align-items: center;
 }
+.page__menu{
+    margin:40px auto;
+  
+}
+
 .menu__link {
 	margin: 20px;
 	color: #10191e;
 	text-decoration: none;
 	font-size: 18px;
 }
+.menu__link:last-of-type{
+  margin-right:0;
+}
+.centered-block{
+    margin: auto;
+}
 
 .menu__link_active{
   text-decoration:underline;
 }
+.content {
+	max-width: 1330px;
+	min-width: 1280px;
+}
+.content__title{
+   font-size:34px;
+  margin: 0 0 40px;
+text-align: center; 
+  
+}
+
 
 .flex-row {
 
@@ -54,77 +86,98 @@ body {
 	background-position: center;
 	background-size: cover;
 }
-.project_beginner {
-	width: 636px;
-	height: 430px;
+.project__overlay{
+    opacity:0;
+    background-color: rgba(0, 0, 100, .8);
+    height: 100%;
+    width: 100%; /* растянули ссылку во весь блок */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* выровняли текст по центру средствами flex */
+    text-decoration: none; /* убрали подчеркивание  */
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box; /* задали внутренний фокус элемента, чтобы контейнер не расширялся */
+    padding: 20px; /* отступ, чтобы текст не касался краёв */
+  
 }
-.project_music-album {
+.project__overlay:hover{
+  opacity:1;
+}
+.project_name_music-album {
 	background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
 
-.project_design-principles {
+.project_name_design-principles {
 	background-image: url(https://code.s3.yandex.net/web-code/design.png);
 }
 .flex-column {
 	justify-content: space-between;
 	display: flex;
-	width: 636px;
-	height: 557px;
 }
-.project_procrastinate {
-	width: 636px;
-	height: 557px;
-}
+
 .project__video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.project_p5 {
-	width: 636px;
-	height: 240px;
+
+.project_width_l{
+  width:636px;
 }
 
-.flex-row_frameworks-inner {
-	width: 636px;
-	height: 290px;
+.project_width_m{
+  width:306px;
 }
 
-.project_slider {
+.project_height_xl{
+    height:557px;
+}
+.project_height_l{
+  height:430px;
+}
+.project_height_m{
+    height:290px;
+}
+.project_height_s{
+  height:240px;
+}
+
+
+.project_name_slider{
 	background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
-	width: 306px;
-	height: 290px;
+	
 }
-.project_reactive {
+.project_name_reactive{
 	background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
-	width: 306px;
-	height: 290px;
+	
 }
 .flex-column_reversed {
 	flex-direction: column-reverse;
 }
-
+.flex-row_space_bottom{
+   margin-bottom:60px;
+  
+}
 .flex-row_reversed {
-	margin: 60px auto;
+
 	flex-direction: row-reverse;
 }
-.project_vanilla {
-	width: 306px;
-	height: 290px;
-}
 
-.project_how-to-study {
+
+.project_name_how-to-study {
 	order: 3;
 	background-image: url("https://code.s3.yandex.net/web-code/how-to-study.png");
 }
 
-.project_across-russia {
-	flex-basis: 636px;
+.project_name_across-russia {
 	order: 1;
 	background-image: url("https://code.s3.yandex.net/web-code/across-russia.png");
 }
-.project_mesto {
+.project_name_mesto {
 	order: 0;
 	background-image: url("https://code.s3.yandex.net/web-code/mesto.png");
 }
@@ -141,14 +194,9 @@ body {
 .footer {
 	max-width: 1330px;
 	min-width: 1280px;
-	margin: auto;
 	display: flex;
 	height: 95px;
 	justify-content: center;
 }
 
-.content {
-	max-width: 1330px;
-	min-width: 1280px;
-	margin: auto;
-}
+
